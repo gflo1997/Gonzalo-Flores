@@ -762,7 +762,44 @@ SHAPES
 
 /* Smaller Height */
 
-@media (max-height: 400px) {
+
+@media (min-height: 550px) {
+    .title {
+        font-size: 40px;
+    }
+    .header__para {
+        font-size: 15px;
+    }
+    .nav__link:first-child {
+        display: none;
+    }
+    .project__description--para {
+        display: none;
+    }
+    .project__description--title{
+        font-size: 16px;
+    }
+    .project__description--sub-title {
+        margin-bottom: 8px;
+        font-size: 12px;
+    }
+    .project__description {
+        margin-left: 60px;
+        width: 100%;
+        text-align: center;
+    }
+    .section__title {
+        font-size: 20px;
+    }
+    .project__description--sub-title {
+        margin-bottom: 8px;
+    }
+    .modal__half {
+        padding: 40px;
+    }
+}
+
+@media (min-height: 375px) {
     .title {
         font-size: 20px;
     }
