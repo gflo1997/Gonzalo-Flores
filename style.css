@@ -194,7 +194,7 @@ LANDING PAGE
 }
 
 .title {
-    font-size: 80px;
+    font-size: 100px;
     margin-bottom: 12px;
     text-align: left;
     line-height: 1;
@@ -506,6 +506,15 @@ MODAL
 
 /* 
 
+ANIMATIONS 
+
+*/
+
+
+  
+
+/* 
+
 PROJECTS 
 
 */
@@ -670,7 +679,7 @@ SHAPES
 /* Small phones, tables, large smart phones */
 @media (max-width: 768px) {
     .title {
-        font-size: 80px;
+        font-size: 100px;
     }
     .header__para {
         font-size: 20px;
@@ -693,7 +702,7 @@ SHAPES
 
 @media (max-width: 480px) {
     .title {
-        font-size: 52px;
+        font-size: 50px;
     }
     .header__para {
         font-size: 28px;
@@ -723,12 +732,12 @@ SHAPES
 
 /* Smaller phones */
 
-@media (max-width: 375px) {
+@media (max-width: 390px) {
     .title {
-        font-size: 35px;
+        font-size: 50px;
     }
     .header__para {
-        font-size: 15px;
+        font-size: 25px;
     }
     .nav__link:first-child {
         display: none;
@@ -763,74 +772,3 @@ SHAPES
 /* Smaller Height */
 
 
-@media (min-height: 550px) {
-    .title {
-        font-size: 40px;
-    }
-    .header__para {
-        font-size: 15px;
-    }
-    .nav__link:first-child {
-        display: none;
-    }
-    .project__description--para {
-        display: none;
-    }
-    .project__description--title{
-        font-size: 16px;
-    }
-    .project__description--sub-title {
-        margin-bottom: 8px;
-        font-size: 12px;
-    }
-    .project__description {
-        margin-left: 60px;
-        width: 100%;
-        text-align: center;
-    }
-    .section__title {
-        font-size: 20px;
-    }
-    .project__description--sub-title {
-        margin-bottom: 8px;
-    }
-    .modal__half {
-        padding: 40px;
-    }
-}
-
-@media (min-height: 375px) {
-    .title {
-        font-size: 20px;
-    }
-    .header__para {
-        font-size: 15px;
-    }
-    .nav__link:first-child {
-        display: none;
-    }
-    .project__description--para {
-        display: none;
-    }
-    .project__description--title{
-        font-size: 16px;
-    }
-    .project__description--sub-title {
-        margin-bottom: 8px;
-        font-size: 12px;
-    }
-    .project__description {
-        margin-left: 60px;
-        width: 100%;
-        text-align: center;
-    }
-    .section__title {
-        font-size: 20px;
-    }
-    .project__description--sub-title {
-        margin-bottom: 8px;
-    }
-    .modal__half {
-        padding: 40px;
-    }
-}

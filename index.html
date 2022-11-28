@@ -7,6 +7,10 @@
   <title>Gonzalo Flores</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="./assets/favicon.ico">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
   <script src="index.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
@@ -16,6 +20,7 @@
       emailjs.init("zuWOLMQYKNr4AFj4-");
     })();
   </script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
   <section id="landing-page" onmousemove="moveBackground(event)">
@@ -40,23 +45,23 @@
       </ul>
     </nav>
     <header class="header">
-      <div class="header__content">
-        <h1 class="title">Hey</h1>
-        <h1 class="title purple"><b>I'm Gonzalo</b></h1>
-        <p class="header__para">
+      <div class="header__content animate__bounceInDown">
+        <h1 data-aos="fade-right" class="title">Hey</h1>
+        <h1 data-aos="fade-right" data-aos-delay="100" class="title purple"><b>I'm Gonzalo</b></h1>
+        <p data-aos="fade-right" data-aos-once="true" data-aos-delay="150" class="header__para">
           I'm a future <b class="purple">Frontend Software Engineer</b> with a
           passion for building interactive websites for great user experience.
           <br />
           Here's a bit more <b class="purple click" onclick="toggleModal()">about me</b>.
         </p>
         <div class="social__list">
-          <a href="https://www.linkedin.com/in/gonzalo-flores-23320313a/" target="_blank" class="social__link click">
+          <a data-aos="fade-right" data-aos-delay="200" data-aos-once="true" href="https://www.linkedin.com/in/gonzalo-flores-23320313a/" target="_blank" class="social__link click">
             <i class="fab fa-linkedin-in"></i>
           </a>
-          <a href="#" class="social__link click">
+          <a data-aos="fade-right" data-aos-delay="150" data-aos-once="true" href="#" class="social__link click">
             <i class="fab fa-github"></i>
           </a>
-          <a href="./assets/Gonzalo Flores (1).pdf" target="_blank" class="social__link click">
+          <a data-aos="fade-right" data-aos-delay="100" data-aos-once="true" href="./assets/Gonzalo Flores (1).pdf" target="_blank" class="social__link click">
             <i class="fas fa-file-pdf"></i>
           </a>
         </div>
@@ -145,11 +150,11 @@
   <section id="projects">
     <div class="container">
       <div class="row">
-        <h1 class="section__title">
+        <h1 data-aos="fade-left" data-aos-delay="250" data-aos-once="true" class="section__title">
           Here are some of my <span class="purple"> projects</span>
         </h1>
         <ul class="project__list">
-          <li class="project">
+          <li data-aos-once="true" data-aos="fade-down" data-aos-delay="300" data-aos-delay="300" data-aos-duration="1000" class="project">
             <div class="project__wrapper">
               <img src="./assets/NFT-SS.png" class="project__img" alt="" />
               <div class="project__wrapper--bg">
@@ -175,7 +180,7 @@
               </div>
             </div>
           </li>
-          <li class="project">
+          <li data-aos-once="true" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" class="project">
             <div class="project__wrapper">
               <img src="./assets/InternetFlicks-SS.png" class="project__img" alt="" />
               <div class="project__wrapper--bg">
@@ -201,7 +206,7 @@
               </div>
             </div>
           </li>
-          <li class="project">
+          <li data-aos-once="true" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" class="project">
             <div class="project__wrapper">
               <img src="./assets/Google Clone.png" class="project__img" alt="" />
               <div class="project__wrapper--bg">
@@ -227,7 +232,7 @@
               </div>
             </div>
           </li>
-          <li class="project">
+          <li data-aos-once="true" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" class="project">
             <div class="project__wrapper">
               <img src="./assets/Twitter-SS.png" class="project__img" alt="" />
               <div class="project__wrapper--bg">
@@ -253,7 +258,7 @@
               </div>
             </div>
           </li>
-          <li class="project">
+          <li data-aos-once="true" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" class="project">
             <div class="project__wrapper">
               <img src="./assets/Hulu-SS.png" class="project__img" alt="" />
               <div class="project__wrapper--bg">
@@ -307,5 +312,9 @@
       </div>
     </div>
   </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
