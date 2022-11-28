@@ -374,7 +374,7 @@ MODAL
 }
 
 .modal__language {
-    width: 25%;
+    width: 40%;
     padding: 16px;
     position: relative;
     display: flex;
@@ -728,6 +728,9 @@ SHAPES
     .modal__half {
         padding: 40px;
     }
+    .modal__language {
+        width: calc(100% / 2);
+    }
 }
 
 /* Smaller phones */
@@ -763,9 +766,6 @@ SHAPES
     }
     .project__description--sub-title {
         margin-bottom: 8px;
-    }
-    .modal__half {
-        padding: 40px;
     }
 }
 
