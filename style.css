@@ -947,10 +947,10 @@ SHAPES
 
 @media (max-width: 390px) {
     .title {
-        font-size: 50px;
+        font-size: 60px;
     }
     .header__para {
-        font-size: 25px;
+        font-size: 35px;
     }
     .nav__link:first-child {
         display: none;
