@@ -977,8 +977,12 @@ SHAPES
     .project__description--sub-title {
         margin-bottom: 8px;
     }
+    .nav__link--anchor {
+        font-size: 30px;
+    }
+    .fa-adjust {
+        font-size: 30px;
+    }
 }
-
-/* Smaller Height */
 
 
