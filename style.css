@@ -947,10 +947,10 @@ SHAPES
 
 @media (max-width: 390px) {
     .title {
-        font-size: 60px;
+        font-size: 100px;
     }
     .header__para {
-        font-size: 35px;
+        font-size: 45px;
     }
     .nav__link:first-child {
         display: none;
@@ -972,7 +972,7 @@ SHAPES
         text-align: center;
     }
     .section__title {
-        font-size: 20px;
+        font-size: 55px;
     }
     .project__description--sub-title {
         margin-bottom: 8px;
