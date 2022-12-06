@@ -923,6 +923,12 @@ SHAPES
     .section__title{
         font-size: 45px
     }
+    .nav__link--anchor {
+        font-size: 24px;
+    }
+    .fa-adjust {
+        font-size: 24px;
+    }
     .nav__link:first-child {
         display: none;
     }
