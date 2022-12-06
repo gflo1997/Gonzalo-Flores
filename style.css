@@ -912,16 +912,16 @@ SHAPES
 
 @media (max-width: 480px) {
     .title {
-        font-size: 50px;
+        font-size: 75px;
     }
     .header__para {
-        font-size: 20px;
+        font-size: 40px;
     }
     .project__description--title {
         font-size: 28px
     }
     .section__title{
-        font-size: 28px
+        font-size: 45px
     }
     .nav__link:first-child {
         display: none;
@@ -946,6 +946,5 @@ SHAPES
     }
 }
 
-/* Smaller phones */
 
 
