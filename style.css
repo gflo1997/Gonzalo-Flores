@@ -921,7 +921,7 @@ SHAPES
         font-size: 20px
     }
     .section__title{
-        font-size: 45px
+        font-size: 24px
     }
     .nav__link--anchor {
         font-size: 16px;
@@ -943,6 +943,7 @@ SHAPES
     }
     .project__description--sub-title {
         margin-bottom: 8px;
+        font-size: 12px;
     }
     .modal__half {
         padding: 40px;
@@ -955,7 +956,7 @@ SHAPES
 /* Smaller phones */
 
 @media (max-width: 390px) {
-    
+
     .modal__language--img {
         width: 70px;
         height: 70px;
