@@ -948,12 +948,10 @@ SHAPES
 
   .modal__language {
     width: calc(100% / 2);
-  }
-  
-  .modal__language--img {
-    width: 100%;
+    padding: 0;
     height: auto;
   }
+
 }
 
 /* Smaller phones */
