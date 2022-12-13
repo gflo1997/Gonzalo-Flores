@@ -374,7 +374,7 @@ MODAL
 }
 
 .modal__language {
-    width: 50%;
+    width: calc(100% / 4);
     padding: 16px;
     position: relative;
     display: flex;
@@ -947,8 +947,10 @@ SHAPES
     .modal__half {
         padding: 40px;
     }
+
     .modal__language {
         width: calc(100% / 2);
+        margin: auto;
     }
 }
 
