@@ -949,7 +949,7 @@ SHAPES
   .modal__language {
     object-fit: cover;
     width: 50%;
-    height: fit-content;
+    height: auto;
   }
 
 }
