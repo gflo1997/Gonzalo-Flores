@@ -947,9 +947,8 @@ SHAPES
   }
 
   .modal__language {
-    width: calc(100% / 2);
-    padding: 0;
-    height: auto;
+    object-fit: cover;
+    width: 50%;
   }
 
 }
