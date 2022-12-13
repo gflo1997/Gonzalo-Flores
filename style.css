@@ -952,5 +952,24 @@ SHAPES
     }
 }
 
+/* Smaller phones */
+
+@media (max-width: 390px) {
+    .title {
+        font-size: 40px;
+    }
+    .header__para {
+        font-size: 20px;
+    }
+    .project__description--title {
+        font-size: 20px
+    }
+    .section__title{
+        font-size: 20px
+    }
+    .nav__link--anchor {
+        font-size: 16px;
+    }   
+}
 
 
