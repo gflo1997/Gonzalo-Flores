@@ -1,383 +1,646 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-G8CVNXL7WY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-G8CVNXL7WY"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-G8CVNXL7WY');
-</script>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gonzalo Flores</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="./assets/favicon.ico">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-  </script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("zuWOLMQYKNr4AFj4-");
-    })();
-  </script>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
-<body>
-  <section id="landing-page" onmousemove="moveBackground(event)">
-    <nav>
-      <figure>
-        <img id="personal-logo" src="./assets/gonzalo-flores-logo.png" alt="" />
-      </figure>
-      <ul class="nav__link--list">
-        <li class="nav__link" onclick="toggleModal()">
-          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">About</a>
-        </li>
-        <li class="nav__link">
-          <a href="#projects" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projects</a>
-        </li>
-        <li class="nav__link" onclick="toggleModal()">
-          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Contact</a>
-        </li>
-        <li class="nav__link click" onclick="toggleContrast()">
-          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black"><i
-              class="fas fa-adjust"></i></a>
-        </li>
-      </ul>
-    </nav>
-    <header class="header">
-      <div class="header__content animate__bounceInDown">
-        <h1 data-aos="fade-right" class="title">Hey</h1>
-        <h1 data-aos="fade-right" data-aos-delay="100" class="title purple"><div class="glitch-wrapper">
-          <div class="glitch" data-glitch="I'm Gonzalo"></div>
-       </div></h1>
-        <p data-aos="fade-right" data-aos-once="true" data-aos-delay="150" class="header__para">
-          I'm <b class="purple">Frontend Software Developer</b> with a
-          passion for building interactive websites for great user experience.
-          <br />
-          Here's a bit more <b class="purple click" onclick="toggleModal()">about me</b>.
-        </p>
-        <div class="social__list">
-          <a data-aos="fade-right" data-aos-delay="200" data-aos-once="true" href="https://www.linkedin.com/in/gonzalo-flores-23320313a/" target="_blank" class="social__link click">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a data-aos="fade-right" data-aos-delay="150" data-aos-once="true" href="https://github.com/gflo1997" target="_blank" class="social__link click">
-            <i class="fab fa-github"></i>
-          </a>
-          <a data-aos="fade-right" data-aos-delay="100" data-aos-once="true" href="./assets/Gonzalo_Flores_Resume.pdf" target="_blank" class="social__link click">
-            <i class="fas fa-file-pdf"></i>
-          </a>
-        </div>
-      </div>
-    </header>
-    <a href="#">
-    <button class="mail__btn click" onclick="toggleModal()">
-      <i class="fas fa-envelope"></i>
-    </button>
-    </a>
-    <a href="#projects" class="scroll">
-      <div class="scroll__icon click"></div>
-    </a>
-    <div class="modal">
-      <div class="modal__half modal__about">
-        <h3 class="modal__title">Here's a bit more about me.</h3>
-        <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Developer</h4>
-        <p>
-          I'm a <b class="purple">frontend software developer </b>with a passion
-          to develop interactive websites for <b class="purple">great user experience.</b>
-          <br />
-          I currently work on personal projects in order to gain experience.
-        </p>
-        <div class="modal__languages">
-          <figure class="modal__language">
-            <img class="modal__language--img" src="./assets/HTML Logo.png" alt="">
-            <span class="language__name">HTML</span>
-          </figure>
-          <figure class="modal__language">
-            <img class="modal__language--img" src="./assets/CSS Logo.png" alt="">
-            <span class="language__name">CSS</span>
-          </figure>
-          <figure class="modal__language">
-            <img class="modal__language--img" src="./assets/JS Logo.png" alt="">
-            <span class="language__name">JavaScript</span>
-          </figure>
-          <figure class="modal__language">
-            <img class="modal__language--img" src="./assets/React Logo.png" alt="">
-            <span class="language__name">React</span>
-          </figure>
-        </div>
-      </div>
-      <div class="modal__half modal__contact">
-        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
-        <h3 class="modal__title modal__title--contact">
-          Let's have a chat!
-        </h3>
-        <h3 class="modal__sub-title modal__sub-title--contact">
-          I'm currently open to new opportunities.
-        </h3>
-        <form id="contact__form" onsubmit="contact(event)">
-          <div class="form__item">
-            <label class="form__item--label">Name</label>
-            <input class="input" name="user_name" type="text"></input>
-          </div>
-          <div class="form__item">
-            <label class="form__item--label">Email</label>
-            <input class="input" name="user_email" type="email"></input>
-          </div>
-          <div class="form__item">
-            <label class="form__item--label">Message</label>
-            <textarea class="input" name="message" type="text"></textarea>
-          </div>
-          <button id="contact__submit" class="form__submit">
-            Send it my way
-          </button>
-        </form>
-        <div class="modal__overlay modal__overlay--loading">
-          <i class="fas fa-spinner"></i>
-        </div>
-        <div class="modal__overlay modal__overlay--success">
-          Thanks for the message! Looking forward to speaking with you soon.
-        </div>
-      </div>
-    </div>
-    <img src="./assets/semi circle.svg" class="shape shape--0">
-    <img src="./assets/circle.svg" class="shape shape--1">
-    <img src="./assets/squiggly.svg" class="shape shape--2">
-    <img src="./assets/circle.svg" class="shape shape--3">
-    <img src="./assets/triangle.svg" class="shape shape--4">
-    <img src="./assets/circle.svg" class="shape shape--5">
-    <img src="./assets/squiggly.svg" class="shape shape--6">
-    <img src="./assets/circle.svg" class="shape shape--7">
-    <img src="./assets/semi circle.svg" class="shape shape--8">
-  </section>
-  <section id="projects">
-    <div class="container">
-      <div class="row">
-        <h1 data-aos="fade-left" data-aos-delay="250" data-aos-once="true" class="section__title">
-          Here are some of my <span class="purple"> projects</span>
-        </h1>
-        <ul class="project__list">
-          <li data-aos-once="true" data-aos="fade-down" data-aos-delay="300" data-aos-delay="300" data-aos-duration="1000" class="project">
-            <div class="project__wrapper">
-              <img src="./assets/NFT-SS.png" class="project__img" alt="" />
-              <div class="project__wrapper--bg">
-                <div class="project__description">
-                  <h3 class="project__description--title">
-                    Ultraverse - NFT World
-                  </h3>
-                  <h4 class="project__description--sub-title">
-                    Html, CSS, JavaScript XML, React, React-Slick, AOS
-                  </h4>
-                  <p class="project__description--para">
-                    NFT website created as a project for "Frontend Simplified" bootcamp. Slick Carousel created using React-Slick. API was fetched using Axios. A skeleton loading stage was added for slower internet connections. Animations were added using AOS library. Finished project was deployed to Vercel.
-                  </p>
-                  <div class="project__description--links">
-                    <a target="_blank" href="https://github.com/gflo1997/gonzalo-internship" class="project__description--link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a target="_blank" href="https://gonzalo-internship.vercel.app/" class="project__description--link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+      gtag("config", "G-G8CVNXL7WY");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gonzalo Flores</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("zuWOLMQYKNr4AFj4-");
+      })();
+    </script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <section id="landing-page" onmousemove="moveBackground(event)">
+      <nav>
+        <figure>
+          <img
+            id="personal-logo"
+            src="./assets/gonzalo-flores-logo.png"
+            alt=""
+          />
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >About</a
+            >
           </li>
-          <li data-aos-once="true" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" class="project">
-            <div class="project__wrapper">
-              <img src="./assets/InternetFlicks-SS.png" class="project__img" alt="" />
-              <div class="project__wrapper--bg">
-                <div class="project__description">
-                  <h3 class="project__description--title">
-                    "Internet Flicks" (Netflix Clone)
-                  </h3>
-                  <h4 class="project__description--sub-title">
-                    HTML, CSS, JavaScript XML, React
-                  </h4>
-                  <p class="project__description--para">
-                    Developed a fully responsive movie app using React, incorporating features such as a filter system and pagination. Utilized Axios to process API requests and retrieve data from a cloud server, dynamically representing the data through skeleton loading states and dynamic routing.
-                  </p>
-                  <div class="project__description--links">
-                    <a target="_blank" href="https://github.com/gflo1997/Internet-Flicks" class="project__description--link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a target="_blank" href="https://internet-flicks-three.vercel.app/" class="project__description--link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <li class="nav__link">
+            <a
+              href="#projects"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Projects</a
+            >
           </li>
-          <li data-aos-once="true" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" class="project">
-            <div class="project__wrapper">
-              <img src="./assets/Google Clone.png" class="project__img" alt="" />
-              <div class="project__wrapper--bg">
-                <div class="project__description">
-                  <h3 class="project__description--title">
-                    Google Clone
-                  </h3>
-                  <h4 class="project__description--sub-title">
-                    Html, CSS, JavaScript XML, React, Firebase
-                  </h4>
-                  <p class="project__description--para">
-                    Developed a search engine using Google's API that allows users to search for and sort news, images, and videos. Integrated the API and implemented search functionality using HTML, CSS, and JavaScript. Created a visually appealing and user-friendly interface that emulates the design of the real Google search engine. The resulting project demonstrated my ability to work with APIs and create functional and aesthetically pleasing web applications.
-                  </p>
-                  <div class="project__description--links">
-                    <a target="_blank" href="https://github.com/gflo1997/Google-Clone" class="project__description--link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a target="_blank" href="https://clone-8c413.firebaseapp.com/" class="project__description--link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contact</a
+            >
           </li>
-          <li data-aos-once="true" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" class="project">
-            <div class="project__wrapper">
-              <img src="./assets/Twitter-SS.png" class="project__img" alt="" />
-              <div class="project__wrapper--bg">
-                <div class="project__description">
-                  <h3 class="project__description--title">
-                    Twitter Clone Project
-                  </h3>
-                  <h4 class="project__description--sub-title">
-                    Html, React, Next.js, Sanity CMS, Typescript, SSR, Tailwind & NextAuth
-                  </h4>
-                  <p class="project__description--para">
-                    Developed a social media app using React that allows users to sign in with their Twitter account, post tweets, comment, share, and message other users. Utilized the Twitter API to authenticate users and retrieve and post data. Created a visually appealing and user-friendly interface that emulates the design of the real Twitter app. The resulting project demonstrated my ability to work with APIs and create functional and aesthetically pleasing web applications.
-                  </p>
-                  <div class="project__description--links">
-                    <a target="_blank" href="https://github.com/gflo1997/Twitter-Clone-Deploy" class="project__description--link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a target="_blank" href="https://twitter-clone-beta-five.vercel.app/" class="project__description--link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li data-aos-once="true" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" class="project">
-            <div class="project__wrapper">
-              <img src="./assets/Hulu-SS.png" class="project__img" alt="" />
-              <div class="project__wrapper--bg">
-                <div class="project__description">
-                  <h3 class="project__description--title">
-                    Hulu Clone Project
-                  </h3>
-                  <h4 class="project__description--sub-title">
-                    Html, React, Next.js, and Tailwind CSS
-                  </h4>
-                  <p class="project__description--para">
-                    Developed a fully responsive clone of the popular streaming app Hulu using Next.js and integrating multiple APIs, including the TMDb and OMDb APIs. Created a user-friendly interface with features such as an animated carousel and dynamic routing. Utilized Axios to process API requests and retrieve data, dynamically representing the data through skeleton loading states. The resulting app provided a seamless and enjoyable user experience for streaming enthusiasts.
-                  </p>
-                  <div class="project__description--links">
-                    <a target="_blank" href="https://github.com/gflo1997/Hulu-Clone-Next" class="project__description--link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a target="_blank" href="https://hulu-clone-next-smoky.vercel.app/" class="project__description--link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li data-aos-once="true" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" class="project">
-            <div class="project__wrapper">
-              <img src="./assets/Youtube SS.png" class="project__img" alt="" />
-              <div class="project__wrapper--bg">
-                <div class="project__description">
-                  <h3 class="project__description--title">
-                    YouTube Clone Project
-                  </h3>
-                  <h4 class="project__description--sub-title">
-                    Html, CSS, JavaScript, React, and Material UI
-                  </h4>
-                  <p class="project__description--para">
-                    Developed a web application for searching and viewing YouTube videos using HTML, CSS, JavaScript, React, and the YouTube API. Led the project as the lead developer, designing the user interface and implementing search, video playback, and API integration. Created a visually appealing and user-friendly application that received positive feedback.
-                  </p>
-                  <div class="project__description--links">
-                    <a target="_blank" href="https://github.com/gflo1997/Hulu-Clone-Next" class="project__description--link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a target="_blank" href="https://hulu-clone-next-smoky.vercel.app/" class="project__description--link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li data-aos-once="true" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" class="project">
-            <div class="project__wrapper">
-              <img src="./assets/Library-SS.png" class="project__img" alt="" />
-              <div class="project__wrapper--bg">
-                <div class="project__description">
-                  <h3 class="project__description--title">
-                    Library Project
-                  </h3>
-                  <h4 class="project__description--sub-title">
-                    Html, CSS, JavaScript XML, React, JSON server
-                  </h4>
-                  <p class="project__description--para">
-                    Developed a personal library management system using React that allows users to browse, search, and 'buy' books. Implemented features such as filtering, pagination, and CRUD (create, read, update, delete) operations for books and users. Utilized a JSON server as a mock API to simulate data storage and retrieval. The resulting app demonstrated my ability to create functional and user-friendly web applications using React.
-                  </p>
-                  <div class="project__description--links">
-                    <a target="_blank" href="https://github.com/gflo1997/Library-Using-React" class="project__description--link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a target="_blank" href="https://library-using-react.vercel.app/" class="project__description--link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <li class="nav__link click" onclick="toggleContrast()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              ><i class="fas fa-adjust"></i
+            ></a>
           </li>
         </ul>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <div class="container">
-      <div class="row footer__row">
-        <figure>
-          <img class="footer__logo--img" src="./assets/gonzalo-flores-logo.png" alt="" />
-        </figure>
-        <div class="footer__social--list">
-          <a href="https://github.com/gflo1997" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
-            Github
-          </a>
-          <a href="https://www.linkedin.com/in/gonzalo-flores-23320313a/" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
-            LinkedIn
-          </a>
-          <a href="#" onclick="toggleModal()" class="footer__social--link link__hover-effect link__hover-effect--white">
-            Contact
-          </a>
-          <a href="./assets/Gonzalo_Flores_Resume.pdf" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
-            Resume
-          </a>
+      </nav>
+      <header class="header">
+        <div class="header__content animate__bounceInDown">
+          <h1 data-aos="fade-right" class="title">Hey</h1>
+          <h1 data-aos="fade-right" data-aos-delay="100" class="title purple">
+            <div class="glitch-wrapper">
+              <div class="glitch" data-glitch="I'm Gonzalo"></div>
+            </div>
+          </h1>
+          <p
+            data-aos="fade-right"
+            data-aos-once="true"
+            data-aos-delay="150"
+            class="header__para"
+          >
+            I'm <b class="purple">Frontend Software Developer</b> with a passion
+            for building interactive websites for great user experience.
+            <br />
+            Here's a bit more
+            <b class="purple click" onclick="toggleModal()">about me</b>.
+          </p>
+          <div class="social__list">
+            <a
+              data-aos="fade-right"
+              data-aos-delay="200"
+              data-aos-once="true"
+              href="https://www.linkedin.com/in/gonzalo-flores-23320313a/"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              data-aos="fade-right"
+              data-aos-delay="150"
+              data-aos-once="true"
+              href="https://github.com/gflo1997"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              data-aos="fade-right"
+              data-aos-delay="100"
+              data-aos-once="true"
+              href="./assets/Gonzalo_Flores_Resume.pdf"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fas fa-file-pdf"></i>
+            </a>
+          </div>
         </div>
-        <div class="footer__copyright">Copyright © 2022 Gonzalo Flores</div>
+      </header>
+      <a href="#">
+        <button class="mail__btn click" onclick="toggleModal()">
+          <i class="fas fa-envelope"></i>
+        </button>
+      </a>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title">Here's a bit more about me.</h3>
+          <h4 class="modal__sub-title modal__sub-title--about">
+            Frontend Software Developer
+          </h4>
+          <p>
+            I'm a <b class="purple">frontend software developer </b>with a
+            passion to develop interactive websites for
+            <b class="purple">great user experience.</b>
+            <br />
+            I currently work on personal projects in order to gain experience.
+          </p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/HTML Logo.png"
+                alt=""
+              />
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/CSS Logo.png"
+                alt=""
+              />
+              <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/JS Logo.png"
+                alt=""
+              />
+              <span class="language__name">JavaScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/React Logo.png"
+                alt=""
+              />
+              <span class="language__name">React</span>
+            </figure>
+          </div>
+        </div>
+        <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+          <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+          <h3 class="modal__sub-title modal__sub-title--contact">
+            I'm currently open to new opportunities.
+          </h3>
+          <form id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input class="input" name="user_name" type="text" />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input class="input" name="user_email" type="email" />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea class="input" name="message" type="text"></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              Send it my way
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for the message! Looking forward to speaking with you soon.
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
+      <img src="./assets/semi circle.svg" class="shape shape--0" />
+      <img src="./assets/circle.svg" class="shape shape--1" />
+      <img src="./assets/squiggly.svg" class="shape shape--2" />
+      <img src="./assets/circle.svg" class="shape shape--3" />
+      <img src="./assets/triangle.svg" class="shape shape--4" />
+      <img src="./assets/circle.svg" class="shape shape--5" />
+      <img src="./assets/squiggly.svg" class="shape shape--6" />
+      <img src="./assets/circle.svg" class="shape shape--7" />
+      <img src="./assets/semi circle.svg" class="shape shape--8" />
+    </section>
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1
+            data-aos="fade-left"
+            data-aos-delay="250"
+            data-aos-once="true"
+            class="section__title"
+          >
+            Here are some of my <span class="purple"> projects</span>
+          </h1>
+          <ul class="project__list">
+            <li
+              data-aos-once="true"
+              data-aos="fade-down"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              class="project"
+            >
+              <div class="project__wrapper">
+                <img src="./assets/NFT-SS.png" class="project__img" alt="" />
+                <div class="project__wrapper--bg">
+                  <div class="project__description">
+                    <h3 class="project__description--title">
+                      Ultraverse - NFT World
+                    </h3>
+                    <h4 class="project__description--sub-title">
+                      Html, CSS, JavaScript XML, React, React-Slick, AOS
+                    </h4>
+                    <p class="project__description--para">
+                      NFT website created as a project for "Frontend Simplified"
+                      bootcamp. Slick Carousel created using React-Slick. API
+                      was fetched using Axios. A skeleton loading stage was
+                      added for slower internet connections. Animations were
+                      added using AOS library. Finished project was deployed to
+                      Vercel.
+                    </p>
+                    <div class="project__description--links">
+                      <a
+                        target="_blank"
+                        href="https://gonzalo-internship.vercel.app/"
+                        class="project__description--link"
+                      >
+                        <i class="fas fa-link"></i>
+                      </a>
+                      <a
+                        target="_blank"
+                        href="https://github.com/gflo1997/gonzalo-internship"
+                        class="project__description--link"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              data-aos-once="true"
+              data-aos="fade-down"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              class="project"
+            >
+              <div class="project__wrapper">
+                <img
+                  src="./assets/Youtube SS.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg">
+                  <div class="project__description">
+                    <h3 class="project__description--title">
+                      YouTube Clone Project
+                    </h3>
+                    <h4 class="project__description--sub-title">
+                      Html, CSS, JavaScript, React, and Material UI
+                    </h4>
+                    <p class="project__description--para">
+                      Developed a web application for searching and viewing
+                      YouTube videos using HTML, CSS, JavaScript, React, and the
+                      YouTube API. Led the project as the lead developer,
+                      designing the user interface and implementing search,
+                      video playback, and API integration. Created a visually
+                      appealing and user-friendly application that received
+                      positive feedback.
+                    </p>
+                    <div class="project__description--links">
+                      <a
+                        target="_blank"
+                        href="https://youtube-videos-nine-vert.vercel.app/"
+                        class="project__description--link"
+                      >
+                        <i class="fas fa-link"></i>
+                      </a>
+                      <a
+                        target="_blank"
+                        href="https://github.com/gflo1997/youtube-videos"
+                        class="project__description--link"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              data-aos-once="true"
+              data-aos="fade-down"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              class="project"
+            >
+              <div class="project__wrapper">
+                <img
+                  src="./assets/Twitter-SS.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg">
+                  <div class="project__description">
+                    <h3 class="project__description--title">
+                      Twitter Clone Project
+                    </h3>
+                    <h4 class="project__description--sub-title">
+                      Html, React, Next.js, Sanity CMS, Typescript, SSR,
+                      Tailwind & NextAuth
+                    </h4>
+                    <p class="project__description--para">
+                      Developed a social media app using React that allows users
+                      to sign in with their Twitter account, post tweets,
+                      comment, share, and message other users. Utilized the
+                      Twitter API to authenticate users and retrieve and post
+                      data. Created a visually appealing and user-friendly
+                      interface that emulates the design of the real Twitter
+                      app. The resulting project demonstrated my ability to work
+                      with APIs and create functional and aesthetically pleasing
+                      web applications.
+                    </p>
+                    <div class="project__description--links">
+                      <a
+                        target="_blank"
+                        href="https://twitter-clone-beta-five.vercel.app/"
+                        class="project__description--link"
+                      >
+                        <i class="fas fa-link"></i>
+                      </a>
+                      <a
+                        target="_blank"
+                        href="https://github.com/gflo1997/Twitter-Clone-Deploy"
+                        class="project__description--link"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              data-aos-once="true"
+              data-aos="fade-down"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              class="project"
+            >
+              <div class="project__wrapper">
+                <img src="./assets/Hulu-SS.png" class="project__img" alt="" />
+                <div class="project__wrapper--bg">
+                  <div class="project__description">
+                    <h3 class="project__description--title">
+                      Hulu Clone Project
+                    </h3>
+                    <h4 class="project__description--sub-title">
+                      Html, React, Next.js, and Tailwind CSS
+                    </h4>
+                    <p class="project__description--para">
+                      Developed a fully responsive clone of the popular
+                      streaming app Hulu using Next.js and integrating multiple
+                      APIs, including the TMDb and OMDb APIs. Created a
+                      user-friendly interface with features such as an animated
+                      carousel and dynamic routing. Utilized Axios to process
+                      API requests and retrieve data, dynamically representing
+                      the data through skeleton loading states. The resulting
+                      app provided a seamless and enjoyable user experience for
+                      streaming enthusiasts.
+                    </p>
+                    <div class="project__description--links">
+                      <a
+                        target="_blank"
+                        href="https://hulu-clone-next-smoky.vercel.app/"
+                        class="project__description--link"
+                      >
+                        <i class="fas fa-link"></i>
+                      </a>
+                      <a
+                        target="_blank"
+                        href="https://github.com/gflo1997/Hulu-Clone-Next"
+                        class="project__description--link"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              data-aos-once="true"
+              data-aos="fade-down"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              class="project"
+            >
+              <div class="project__wrapper">
+                <img
+                  src="./assets/Library-SS.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg">
+                  <div class="project__description">
+                    <h3 class="project__description--title">Library Project</h3>
+                    <h4 class="project__description--sub-title">
+                      Html, CSS, JavaScript XML, React, JSON server
+                    </h4>
+                    <p class="project__description--para">
+                      Developed a personal library management system using React
+                      that allows users to browse, search, and 'buy' books.
+                      Implemented features such as filtering, pagination, and
+                      CRUD (create, read, update, delete) operations for books
+                      and users. Utilized a JSON server as a mock API to
+                      simulate data storage and retrieval. The resulting app
+                      demonstrated my ability to create functional and
+                      user-friendly web applications using React.
+                    </p>
+                    <div class="project__description--links">
+                      <a
+                        target="_blank"
+                        href="https://library-using-react.vercel.app/"
+                        class="project__description--link"
+                      >
+                        <i class="fas fa-link"></i>
+                      </a>
+                      <a
+                        target="_blank"
+                        href="https://github.com/gflo1997/Library-Using-React"
+                        class="project__description--link"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              data-aos-once="true"
+              data-aos="fade-down"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              class="project"
+            >
+              <div class="project__wrapper">
+                <img
+                  src="./assets/InternetFlicks-SS.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg">
+                  <div class="project__description">
+                    <h3 class="project__description--title">
+                      "Internet Flicks" (Netflix Clone)
+                    </h3>
+                    <h4 class="project__description--sub-title">
+                      HTML, CSS, JavaScript XML, React
+                    </h4>
+                    <p class="project__description--para">
+                      Developed a fully responsive movie app using React,
+                      incorporating features such as a filter system and
+                      pagination. Utilized Axios to process API requests and
+                      retrieve data from a cloud server, dynamically
+                      representing the data through skeleton loading states and
+                      dynamic routing.
+                    </p>
+                    <div class="project__description--links">
+                      <a
+                        target="_blank"
+                        href="https://internet-flicks-three.vercel.app/"
+                        class="project__description--link"
+                      >
+                        <i class="fas fa-link"></i>
+                      </a>
+                      <a
+                        target="_blank"
+                        href="https://github.com/gflo1997/Internet-Flicks"
+                        class="project__description--link"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li
+              data-aos-once="true"
+              data-aos="fade-down"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              class="project"
+            >
+              <div class="project__wrapper">
+                <img
+                  src="./assets/Google Clone.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg">
+                  <div class="project__description">
+                    <h3 class="project__description--title">Google Clone</h3>
+                    <h4 class="project__description--sub-title">
+                      Html, CSS, JavaScript XML, React, Firebase
+                    </h4>
+                    <p class="project__description--para">
+                      Developed a search engine using Google's API that allows
+                      users to search for and sort news, images, and videos.
+                      Integrated the API and implemented search functionality
+                      using HTML, CSS, and JavaScript. Created a visually
+                      appealing and user-friendly interface that emulates the
+                      design of the real Google search engine. The resulting
+                      project demonstrated my ability to work with APIs and
+                      create functional and aesthetically pleasing web
+                      applications.
+                    </p>
+                    <div class="project__description--links">
+                      <a
+                        target="_blank"
+                        href="https://clone-8c413.firebaseapp.com/"
+                        class="project__description--link"
+                      >
+                        <i class="fas fa-link"></i>
+                      </a>
+                      <a
+                        target="_blank"
+                        href="https://github.com/gflo1997/Google-Clone"
+                        class="project__description--link"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row footer__row">
+          <figure>
+            <img
+              class="footer__logo--img"
+              src="./assets/gonzalo-flores-logo.png"
+              alt=""
+            />
+          </figure>
+          <div class="footer__social--list">
+            <a
+              href="https://github.com/gflo1997"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Github
+            </a>
+            <a
+              href="https://www.linkedin.com/in/gonzalo-flores-23320313a/"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="#"
+              onclick="toggleModal()"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Contact
+            </a>
+            <a
+              href="./assets/Gonzalo_Flores_Resume.pdf"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Resume
+            </a>
+          </div>
+          <div class="footer__copyright">Copyright © 2022 Gonzalo Flores</div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
