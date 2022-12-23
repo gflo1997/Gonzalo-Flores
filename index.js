@@ -56,3 +56,20 @@ function contact(event) {
     isModalOpen = true;
     document.body.classList += " modal--open";
   }
+
+  // Show More Button
+
+  const showMoreButton = document.getElementById("show-more-button");
+  const projects = document.querySelectorAll(".project");
+  
+  showMoreButton.addEventListener("click", () => {
+    projects.forEach((project) => {
+      const show = project.getAttribute("data-show");
+      if (show === "false") {
+        project.setAttribute("data-show", "true");
+        project.classList.remove("hide");
+        project.classList.add("show");
+      }
+    });
+    showMoreButton.parentNode.removeChild(showMoreButton);
+  });

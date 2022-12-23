@@ -29,7 +29,6 @@
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
     ></script>
-    <script src="index.js"></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
@@ -250,7 +249,8 @@
               data-aos="fade-down"
               data-aos-delay="300"
               data-aos-duration="1000"
-              class="project"
+              data-show="true"
+    class="project show"
             >
               <div class="project__wrapper">
                 <img src="./assets/NFT-SS.png" class="project__img" alt="" />
@@ -295,7 +295,8 @@
               data-aos="fade-down"
               data-aos-delay="300"
               data-aos-duration="1000"
-              class="project"
+              data-show="true"
+    class="project show"
             >
               <div class="project__wrapper">
                 <img
@@ -306,7 +307,7 @@
                 <div class="project__wrapper--bg">
                   <div class="project__description">
                     <h3 class="project__description--title">
-                      YouTube Clone Project
+                      YouTube Videos
                     </h3>
                     <h4 class="project__description--sub-title">
                       Html, CSS, JavaScript, React, and Material UI
@@ -345,7 +346,8 @@
               data-aos="fade-down"
               data-aos-delay="300"
               data-aos-duration="1000"
-              class="project"
+              data-show="true"
+    class="project show"
             >
               <div class="project__wrapper">
                 <img
@@ -356,7 +358,7 @@
                 <div class="project__wrapper--bg">
                   <div class="project__description">
                     <h3 class="project__description--title">
-                      Twitter Clone Project
+                      Twitter Project
                     </h3>
                     <h4 class="project__description--sub-title">
                       Html, React, Next.js, Sanity CMS, Typescript, SSR,
@@ -398,14 +400,15 @@
               data-aos="fade-down"
               data-aos-delay="300"
               data-aos-duration="1000"
-              class="project"
+              data-show="true"
+    class="project show"
             >
               <div class="project__wrapper">
                 <img src="./assets/Hulu-SS.png" class="project__img" alt="" />
                 <div class="project__wrapper--bg">
                   <div class="project__description">
                     <h3 class="project__description--title">
-                      Hulu Clone Project
+                      Hulu Project
                     </h3>
                     <h4 class="project__description--sub-title">
                       Html, React, Next.js, and Tailwind CSS
@@ -446,7 +449,8 @@
               data-aos="fade-down"
               data-aos-delay="300"
               data-aos-duration="1000"
-              class="project"
+              data-show="false"
+    class="project hide"
             >
               <div class="project__wrapper">
                 <img
@@ -495,7 +499,8 @@
               data-aos="fade-down"
               data-aos-delay="300"
               data-aos-duration="1000"
-              class="project"
+              data-show="false"
+    class="project hide"
             >
               <div class="project__wrapper">
                 <img
@@ -506,7 +511,7 @@
                 <div class="project__wrapper--bg">
                   <div class="project__description">
                     <h3 class="project__description--title">
-                      "Internet Flicks" (Netflix Clone)
+                      Internet Flicks
                     </h3>
                     <h4 class="project__description--sub-title">
                       HTML, CSS, JavaScript XML, React
@@ -541,11 +546,56 @@
             </li>
 
             <li
+            data-aos-once="true"
+            data-aos="fade-down"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+            data-show="false"
+  class="project hide"
+          >
+            <div class="project__wrapper">
+              <img
+                src="./assets/QR Wizard.png"
+                class="project__img"
+                alt=""
+              />
+              <div class="project__wrapper--bg">
+                <div class="project__description">
+                  <h3 class="project__description--title">QR WIZARD</h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript, React
+                  </h4>
+                  <p class="project__description--para">
+                    QR Wizard is a web application that allows users to generate QR codes for various types of data, such as text, URLs, and vCards (electronic business cards). Users can save the QR codes as images or export them as SVG (Scalable Vector Graphics) files. The project was developed using HTML, CSS, and JavaScript, and built using the React library. It was deployed using Vercel, a platform that provides tools and services for developing and deploying web applications. 
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      target="_blank"
+                      href="https://qr-generator-jet.vercel.app/"
+                      class="project__description--link"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://github.com/gflo1997/qr-generator"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+            <li
               data-aos-once="true"
               data-aos="fade-down"
               data-aos-delay="300"
               data-aos-duration="1000"
-              class="project"
+              data-show="false"
+    class="project hide"
             >
               <div class="project__wrapper">
                 <img
@@ -591,6 +641,8 @@
               </div>
             </li>
           </ul>
+          <div class="center-button"><button id="show-more-button">Show More</button></div>
+          
         </div>
       </div>
     </section>
@@ -638,6 +690,7 @@
         </div>
       </div>
     </footer>
+    <script src="index.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
